@@ -40,3 +40,11 @@ endpoints:
       models:
         default: ["deepseek/deepseek-chat-v3-0324"]
         fetch: false
+
+    # IMAGE GENERATION - Flux
+    - name: "Image Gen (FLUX)"
+      apiKey: "${REPLICATE_API_KEY}"
+      baseURL: "https://api.replicate.com/v1"
+      models:
+        default: ["black-forest-labs/flux-schnell"]
+        fetch: false
